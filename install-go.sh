@@ -32,11 +32,6 @@ fi
 if ! check_variable "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin"; then
     echo "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin" >> ~/.bashrc
 fi
-
-printf '⚠️  ADD (OR REPLACE) THIS LINE BELOW TO YOUR ~/.bashrc  ⚠️\n\n'
-printf "export GOROOT=\"$HOME/go\"\n"
-printf "export GOPATH=\"$HOME/go/packages\"\n"
-printf "export PATH=\$PATH:\$GOROOT/bin:\$GOPATH/bin\n\n"
-
 printf "You are ready to Go!\n"
+printf 'Run ~/.bashrc  to start using go\n\n'
 go version
